@@ -1,13 +1,18 @@
 
-value1 = float(input("Type any value: "))
-value2 = float(input("Type any value: "))
-value3 = ""
+def get_number(msg):
+    while True:
+        try:
+            return float(input(msg))
+
+        except ValueError:
+            print("`Number invalid!!")
+
+value1 = get_number("Type a number: ")
+value2 = get_number("Type another number: ")
 
 if value1 > value2:
-    value3 = f"Value {value1} greater than value {value2}"
+    print(f"Value {value1} greater than value {value2}")
 elif value1 < value2:
-    value3 = f"Value {value1} less than value {value2}"
+    print(f"Value {value1} less than value{value2}")
 else: 
-    value3 = f"Value {value1} equals value {value2}"
-
-print(value3)
+    print(f"Value {value1} equals value  {value2}")

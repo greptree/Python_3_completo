@@ -1,22 +1,16 @@
-nome = ""
-sobrenome = ""
-idade = 17
-maior_idade = (idade >= 18)
-ano_nascimento = 2025 - idade
-altura_em_metros = 1.65
-print(maior_idade)
+name = "kathau"
+last_name = "kathin"
+age = 17
+height = 1.65
 
-def check_idade(x):
-    if(x):
-        print("Maior de idade")
+def check_idade(age):
 
-    if(not x):
-        print("Menor de idade")
+    if(age >= 18):
+        return "Adult"
+    else:
+        return "Adolescent"
 
-
-print(f"Nome: {nome}")
-print(f"Sobrenome: {sobrenome}")
-print(f"Idade: {idade}")
-print(f"Ano de Nascimento: {ano_nascimento}")
-check_idade(maior_idade)
-print(f"Altura em metros; {altura_em_metros}")
+print(f"Name: {name}")
+print(f"Last name: {last_name}")
+print(f"Age: {age} {check_idade(age)}")
+print(f"Height; {height}")

@@ -9,5 +9,5 @@ try:
         print("even number")
     else:
         print("odd number")
-except:
+except ValueError:
     print("enter an integer")

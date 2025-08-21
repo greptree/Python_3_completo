@@ -7,7 +7,7 @@ try:
         print("Good Afternoon!")
     elif horas <= 23:
         print("Good Evening")
-except:
+except ValueError:
     print("Type a hour!")
     
 
