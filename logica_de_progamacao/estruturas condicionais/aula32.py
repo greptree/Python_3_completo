@@ -1,4 +1,3 @@
-
 numero_inteiro = input("Type an integer number: ")
 
 try:
