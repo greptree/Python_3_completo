@@ -27,6 +27,8 @@ print(pessoa2["nome"])
 
 
 # podemops usar o import copy , para deepcopy que seria um copy mais duro caso queira alterar o a lista e os mutaveis.
+# o import copy e mais para quem vai usar deepcopy provavelmente para o eu do futuro sempre fazer o shallow copy em vez de um deep copy.
+
 
 pessoa3 = copy.deepcopy(pessoa)
 print(pessoa["nome"] + f" deepcopy")
